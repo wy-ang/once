@@ -1,14 +1,21 @@
+a,i,p,em,span,ul,ol,li,button,input,label,ins,h1,h2,h3,h4,h5,h6,dl,dt,dd{font-size: 14px;}
 /*布局*/
-.wrap{width: 1170px;margin: 0 auto;word-spacing: -4px;}
-.side,.mn{display: inline-block;*display: inline;vertical-align: top;*zoom:1;}
+.wrap{width: 1170px;margin: 0 auto;font-size:0}
+.side,.mn,label.label-control,input.input-control,.graphic li{display: inline-block;*display: inline;vertical-align: top;*zoom:1;}
+.side{margin-top: 15px;border: 1px solid #ccc;}
+.mn{margin:15px 0 0 15px;padding: 15px;border: 1px solid #ccc;}
 /*按钮*/
-
 .btn {
-    font-size: 15px;
+    padding: 6px 12px;
+    display:inline-block;
+    line-height: 20px;
     text-align: center;
-    color: #FFF;
-    border: 0;
-    cursor: pointer
+    color: #333;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background: #e6e6e6;
+    cursor: pointer;
 }
 
 .btn:active:focus,.btn:focus {
@@ -18,7 +25,6 @@
 }
 
 .btn:focus,.btn:hover {
-    color: #fff;
     text-decoration: none;
     opacity: .8
 }
@@ -30,59 +36,42 @@
     box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
 }
 
-
-
-
-.icon {
-    margin-right: 10px;
-    width: 18px;
-    height: 18px;
-    background: url(../images/icon.png) no-repeat
+/*关闭按钮*/
+span.close{
+  cursor: pointer;
 }
-
-.icon-grey {
-    background-position: 0 -87px
+/*横向列表*/
+ul.row{
+  font-size: 0;
 }
-
-.ipt,
-.txta {
-    padding: 7px;
-    border: 1px solid #ccc
-}
-
-.txta {
-    padding: 7px 0 0 7px
-}
-
-.it-box {
-    position: relative
-}
-
-.it-ins {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #999
-}
-
-.ipt-focus {
-    border: 1px solid #58afff
-}
-
-.thumbnail-r {
-    float: right
-}
-
-.caption-row {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    vertical-align: top
+ul.row li{
+  display: inline-block;
+  *display: inline;
 }
 /*表单*/
-
+input.input-control{
+  padding: 6px 12px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+label.label-control{
+  padding: 6px 12px;
+  height: 22px;
+  line-height: 22px;
+}
 /*图文*/
-
+.graphic ul{
+  margin-left: -30px;
+  font-size: 0;
+}
+.graphic li{
+  padding-left: 30px;
+}
+.img-control,.doc-control,.doc-control strong{display: block;}
+img{*border: 1px solid #ccc;}
 /*选项卡*/
 
 /*评分*/
